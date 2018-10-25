@@ -30,6 +30,7 @@
 			<header id="header" style="color:white">
 				<h1>{{ .Site.Params.name | safeHTML }}</h1>
 				<p>{{ .Site.Params.about | safeHTML }}</p>
+				<a href="{{ .Site.Params.blog | safeURL }}">my Blog</a>
 				<nav>
 					<ul>
 						{{ range .Site.Params.social }}
