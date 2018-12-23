@@ -30,8 +30,9 @@
 			<header id="header" style="color:white">
 				<h1>{{ .Site.Params.name | safeHTML }}</h1>
 				<p>{{ .Site.Params.about | safeHTML }}</p>
-				<span class="icon fa-thumbs-up"></span>
-				<a href="{{ .Site.Params.blog | safeURL }}"> visit Blog</a>
+				<span class="icon fa-star"></span>
+				<a href="{{ .Site.Params.blog | safeURL }}"> Visit My Blog</a>
+				<span class="icon fa-star"></span>
 				<nav>
 					<ul>
 						{{ range .Site.Params.social }}
@@ -43,7 +44,7 @@
 
 			<!-- Footer -->
 			<footer id="footer">
-				<span class="copyright">
+				<span class="copyright">Made
 					with <span style="color: red;">&hearts;</span> <a href="{{ .Site.BaseURL }}"><strong>{{ .Site.Params.name }}</strong></a>
 				</span>
 			</footer>
