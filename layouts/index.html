@@ -36,7 +36,11 @@
 				<nav>
 					<ul>
 						{{ range .Site.Params.social }}
-						<li><a href="{{ .link | safeURL }}" class="icon fa-{{ .icon }}" target="_blank"><span class="label">{{ .medium }}</span></a></li>
+						<li>
+							<a href="{{ .link | safeURL }}" class="icon fa-{{ .icon }}" target="_blank">
+								<span class="label">{{ .medium }}</span>
+							</a>
+						</li>
 						{{ end }}
 					</ul>
 				</nav>
@@ -44,7 +48,7 @@
 
 			<!-- Footer -->
 			<footer id="footer">
-				<span class="copyright">from Surabaya with <i class="fa fa-heart pulse" style="color: red"></i>
+				<span class="copyright">from Indonesia with <i class="fa fa-heart pulse" style="color: red"></i>
 				</span>
 			</footer>
 
